@@ -1,0 +1,6 @@
+com/ezoqc/defijava/controller/AbstractController.class
+com/ezoqc/defijava/model/Client.class
+com/ezoqc/defijava/exception/NotFoundException.class
+com/ezoqc/defijava/DefijavaApplication.class
+com/ezoqc/defijava/repository/ClientDAO.class
+com/ezoqc/defijava/controller/ClientController.class

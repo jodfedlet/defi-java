@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.ezoqc.defijava.DefijavaApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.765 s - in com.ezoqc.defijava.DefijavaApplicationTests

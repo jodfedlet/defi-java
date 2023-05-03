@@ -1,0 +1,5 @@
+/home/sylvain/dev/defi-java/src/main/java/com/ezoqc/defijava/DefijavaApplication.java
+/home/sylvain/dev/defi-java/src/main/java/com/ezoqc/defijava/model/Client.java
+/home/sylvain/dev/defi-java/src/main/java/com/ezoqc/defijava/service/ClientService.java
+/home/sylvain/dev/defi-java/src/main/java/com/ezoqc/defijava/repository/ClientDAO.java
+/home/sylvain/dev/defi-java/src/main/java/com/ezoqc/defijava/controller/ClientController.java
