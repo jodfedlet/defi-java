@@ -25,7 +25,7 @@ public class ClientController {
             // logger.info("Starting to retrieve the client with id = " + clientId);
             Client clientFound = clientService.findById(clientId);
             // logger.info("Client response: " + clientFound);
-            return new ResponseEntity<Client>(clientFound, HttpStatus.OK);
+            return new ResponseEntity(clientFound, HttpStatus.OK);
         } catch (Exception e) {
             // logger.info("Failed to retrieve client for the id = " + clientId);
             return new ResponseEntity(e.getMessage(), HttpStatus.OK);

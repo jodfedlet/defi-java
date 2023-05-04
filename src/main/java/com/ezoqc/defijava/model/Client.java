@@ -58,8 +58,8 @@ public class Client {
     }
 
     @JsonIgnore
-    public float getAge() {
-      return (new Date().getTime() - this.birthdate.getTime()) / (1000 * 60 * 60 * 24 * 365f);
+    public int getAge() {
+        return (int) ((new Date().getTime() - this.birthdate.getTime()) / 1000 / 60 / 60 / 24 / 365f);
     }
 
     @Override
