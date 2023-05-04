@@ -2,7 +2,7 @@ package com.ezoqc.defijava;
 
 import com.ezoqc.defijava.controller.ClientController;
 import com.ezoqc.defijava.model.Client;
-import com.ezoqc.defijava.repository.ClientDAO;
+import com.ezoqc.defijava.repository.ClientRepository;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
@@ -22,7 +22,7 @@ class DefijavaApplicationTests {
 	private ClientController ctrl;
 
 	@Mock
-	private ClientDAO dao;
+	private ClientRepository dao;
 
 	@Test
 	void testThatControllerReturnsValue() {
@@ -37,7 +37,7 @@ class DefijavaApplicationTests {
 		Calendar car = Calendar.getInstance();
 		car.set(1988, 6, 15);
 		c.setBirthdate(new Date(car.toInstant().toEpochMilli()));
-    assertEquals(34, Math.floor(c.getAge()));
+		assertEquals(34, Math.floor(c.getAge()));
 	}
 
 }
