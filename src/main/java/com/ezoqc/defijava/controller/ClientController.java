@@ -1,24 +1,35 @@
 package com.ezoqc.defijava.controller;
 
 import com.ezoqc.defijava.model.Client;
-import com.ezoqc.defijava.repository.ClientDAO;
+import com.ezoqc.defijava.service.ClientService;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("client")
-public class ClientController extends AbstractController {
+@RequestMapping("clients")
+public class ClientController {
     @Autowired
-    private ClientDAO dao;
+    private ClientService clientService;
 
-    @GetMapping
-    public Client getClientById(@RequestParam Long clientId) {
-        Client client_found = dao.findById(clientId).get();
-        System.out.println(client_found);
-        isFound(client_found);
-        return client_found;
+    // private final Logger logger = Logger.getLogger(ClientController.class);
+
+    @GetMapping("/{clientId}")
+    public ResponseEntity<Client> getClientById(@PathVariable Long clientId) throws Exception {
+        try {
+            // logger.info("Starting to retrieve the client with id = " + clientId);
+            Client clientFound = clientService.findById(clientId);
+            // logger.info("Client response: " + clientFound);
+            return new ResponseEntity<Client>(clientFound, HttpStatus.OK);
+        } catch (Exception e) {
+            // logger.info("Failed to retrieve client for the id = " + clientId);
+            return new ResponseEntity(e.getMessage(), HttpStatus.OK);
+        }
+
     }
 }
