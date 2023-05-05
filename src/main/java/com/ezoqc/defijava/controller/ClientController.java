@@ -21,15 +21,9 @@ public class ClientController {
 
     @GetMapping("/{clientId}")
     public ResponseEntity<Client> getClientById(@PathVariable Long clientId) throws Exception {
-        try {
-            // logger.info("Starting to retrieve the client with id = " + clientId);
-            Client clientFound = clientService.findById(clientId);
-            // logger.info("Client response: " + clientFound);
-            return new ResponseEntity(clientFound, HttpStatus.OK);
-        } catch (Exception e) {
-            // logger.info("Failed to retrieve client for the id = " + clientId);
-            return new ResponseEntity(e.getMessage(), HttpStatus.OK);
-        }
-
+        // logger.info("Starting to retrieve the client with id = " + clientId);
+        Client clientFound = clientService.findById(clientId);
+        // logger.info("Client response: " + clientFound);
+        return new ResponseEntity(clientFound, HttpStatus.OK);
     }
 }
