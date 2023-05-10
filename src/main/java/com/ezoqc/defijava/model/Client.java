@@ -1,28 +1,36 @@
 package com.ezoqc.defijava.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-
+import java.util.Date;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import java.util.Date;
+import javax.persistence.Table;
+
+
+
 
 @Entity
+@Table(name = "client")
 public class Client {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String firstName;
     private String lastName;
+
+    @Column(unique = true)
     private String socialSecurityNumber;
     private Date birthdate;
 
-    public Long getId() {
-        return id;
-    }
-
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public Long getId() {
+        return id;
     }
 
     public String getFirstName() {
@@ -58,8 +66,8 @@ public class Client {
     }
 
     @JsonIgnore
-    public float getAge() {
-      return (new Date().getTime() - this.birthdate.getTime()) / (1000 * 60 * 60 * 24 * 365f);
+    public int getAge() {
+        return (int) ((new Date().getTime() - this.birthdate.getTime()) / 1000 / 60 / 60 / 24 / 365f);
     }
 
     @Override

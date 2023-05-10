@@ -1,1 +1,4 @@
+com/ezoqc/defijava/model/ClientTests.class
+com/ezoqc/defijava/controller/ClientControllerTests.class
+com/ezoqc/defijava/service/ClientServiceTests.class
 com/ezoqc/defijava/DefijavaApplicationTests.class
