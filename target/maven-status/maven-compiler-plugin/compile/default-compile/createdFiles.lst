@@ -2,5 +2,8 @@ com/ezoqc/defijava/controller/AbstractController.class
 com/ezoqc/defijava/model/Client.class
 com/ezoqc/defijava/exception/NotFoundException.class
 com/ezoqc/defijava/DefijavaApplication.class
-com/ezoqc/defijava/repository/ClientDAO.class
+com/ezoqc/defijava/service/ClientService.class
+com/ezoqc/defijava/exception/EntityNotFoundException.class
 com/ezoqc/defijava/controller/ClientController.class
+com/ezoqc/defijava/exception/InvalidArgumentException.class
+com/ezoqc/defijava/repository/ClientRepository.class

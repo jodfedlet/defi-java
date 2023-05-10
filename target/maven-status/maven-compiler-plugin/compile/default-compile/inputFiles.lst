@@ -1,5 +1,10 @@
-/home/sylvain/dev/defi-java/src/main/java/com/ezoqc/defijava/DefijavaApplication.java
-/home/sylvain/dev/defi-java/src/main/java/com/ezoqc/defijava/model/Client.java
-/home/sylvain/dev/defi-java/src/main/java/com/ezoqc/defijava/service/ClientService.java
-/home/sylvain/dev/defi-java/src/main/java/com/ezoqc/defijava/repository/ClientDAO.java
-/home/sylvain/dev/defi-java/src/main/java/com/ezoqc/defijava/controller/ClientController.java
+/home/jodfedlet/github/defi-java/src/main/java/com/ezoqc/defijava/exception/EntityNotFoundException.java
+/home/jodfedlet/github/defi-java/src/main/java/com/ezoqc/defijava/config/SwaggerConfig.java
+/home/jodfedlet/github/defi-java/src/main/java/com/ezoqc/defijava/model/Client.java
+/home/jodfedlet/github/defi-java/src/main/java/com/ezoqc/defijava/exception/InvalidArgumentException.java
+/home/jodfedlet/github/defi-java/src/main/java/com/ezoqc/defijava/DefijavaApplication.java
+/home/jodfedlet/github/defi-java/src/main/java/com/ezoqc/defijava/exception/NotFoundException.java
+/home/jodfedlet/github/defi-java/src/main/java/com/ezoqc/defijava/service/ClientService.java
+/home/jodfedlet/github/defi-java/src/main/java/com/ezoqc/defijava/controller/AbstractController.java
+/home/jodfedlet/github/defi-java/src/main/java/com/ezoqc/defijava/repository/ClientRepository.java
+/home/jodfedlet/github/defi-java/src/main/java/com/ezoqc/defijava/controller/ClientController.java

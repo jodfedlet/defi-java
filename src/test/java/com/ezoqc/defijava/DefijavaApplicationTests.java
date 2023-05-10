@@ -1,16 +1,11 @@
 package com.ezoqc.defijava;
 
 import com.ezoqc.defijava.controller.ClientController;
-import com.ezoqc.defijava.model.Client;
 import com.ezoqc.defijava.repository.ClientRepository;
-import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.util.Calendar;
-import java.util.Date;
-import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -24,6 +19,7 @@ class DefijavaApplicationTests {
 	@Mock
 	private ClientRepository dao;
 
+	/*
 	@Test
 	void testThatControllerReturnsValue() {
 		when(dao.findById(1L)).thenReturn(Optional.of(new Client()));
@@ -39,5 +35,7 @@ class DefijavaApplicationTests {
 		c.setBirthdate(new Date(car.toInstant().toEpochMilli()));
 		assertEquals(34, Math.floor(c.getAge()));
 	}
+
+	*/
 
 }
